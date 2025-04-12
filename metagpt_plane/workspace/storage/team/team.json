@@ -1,0 +1,484 @@
+{
+    "env": {
+        "desc": "",
+        "roles": {
+            "Understanding existing code and provide a brief overview of the relevant code structure": {
+                "name": "Brant",
+                "profile": "Understanding existing code and provide a brief overview of the relevant code structure",
+                "goal": "",
+                "constraints": "",
+                "desc": "",
+                "is_human": false,
+                "role_id": "",
+                "states": [
+                    "0. ReadCode",
+                    "1. AnalysisCode"
+                ],
+                "actions": [
+                    {
+                        "name": "ReadCode",
+                        "i_context": "",
+                        "prefix": "You are a Understanding existing code and provide a brief overview of the relevant code structure, named Brant, your goal is . ",
+                        "desc": "",
+                        "__module_class_name": "__main__.ReadCode"
+                    },
+                    {
+                        "name": "AnalysisCode",
+                        "i_context": "",
+                        "prefix": "You are a Understanding existing code and provide a brief overview of the relevant code structure, named Brant, your goal is . ",
+                        "desc": "",
+                        "PROMPT_TEMPLATE": "\n    **Context**:\n    As the Analyst, your task is to analyze the provided plane game code (`bullet.py`) related to the plane's bullets and firing mechanisms.\n\n    **Tasks**:\n    - Provide a concise and clear summary of the code structure.\n    - Identify and describe the key classes, functions, and their roles.\n    - Explain how these classes and functions interact with each other.\n    - Discuss how new bullet patterns or abilities can be integrated into the existing code architecture.\n\n    **Guidelines**:\n    - Focus on essential details that will assist in designing new bullet patterns.\n    - Keep the summary well-organized and easy to understand.\n    - Do not modify or write new code; only analyze and summarize the existing code.\n\n    **Existing Code**:\n    {code}\n    ",
+                        "__module_class_name": "__main__.AnalysisCode"
+                    }
+                ],
+                "rc": {
+                    "memory": {
+                        "storage": [
+                            {
+                                "id": "e89dd702081646aca0bf46c08af573fa",
+                                "content": "bullet_metagpt.py",
+                                "instruct_content": null,
+                                "role": "Human",
+                                "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+                                "sent_from": "",
+                                "send_to": [
+                                    "<all>"
+                                ]
+                            }
+                        ],
+                        "index": {
+                            "metagpt.actions.add_requirement.UserRequirement": [
+                                {
+                                    "id": "e89dd702081646aca0bf46c08af573fa",
+                                    "content": "bullet_metagpt.py",
+                                    "instruct_content": null,
+                                    "role": "Human",
+                                    "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+                                    "sent_from": "",
+                                    "send_to": [
+                                        "<all>"
+                                    ]
+                                }
+                            ]
+                        },
+                        "ignore_id": false
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "state": -1,
+                    "watch": [
+                        "metagpt.actions.add_requirement.UserRequirement"
+                    ],
+                    "react_mode": "react",
+                    "max_react_loop": 1
+                },
+                "addresses": [
+                    "Brant",
+                    "__main__.analyst"
+                ],
+                "planner": {
+                    "plan": {
+                        "goal": "",
+                        "context": "",
+                        "tasks": [],
+                        "task_map": {},
+                        "current_task_id": ""
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "auto_run": false
+                },
+                "recovered": false,
+                "latest_observed_msg": {
+                    "id": "e89dd702081646aca0bf46c08af573fa",
+                    "content": "bullet_metagpt.py",
+                    "instruct_content": null,
+                    "role": "Human",
+                    "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+                    "sent_from": "",
+                    "send_to": [
+                        "<all>"
+                    ]
+                },
+                "__module_class_name": "__main__.analyst"
+            },
+            "design new bullet": {
+                "name": "Alice",
+                "profile": "design new bullet",
+                "goal": "",
+                "constraints": "",
+                "desc": "",
+                "is_human": false,
+                "role_id": "",
+                "states": [
+                    "0. DesigneCode"
+                ],
+                "actions": [
+                    {
+                        "name": "DesigneCode",
+                        "i_context": "",
+                        "prefix": "You are a design new bullet, named Alice, your goal is . ",
+                        "desc": "",
+                        "PROMPT_TEMPLATE": "\n   **Context**:\n    Based on the code analysis provided by the Analyst, your task is to design a new and interesting bullet pattern or ability for the player's plane that can be smoothly integrated into the game.\n    Ensure the ability is feasible within the current architecture and does not exceed 100 words in the description.\n    **Tasks**:\n    - Propose one new bullet pattern or ability for the player's plane.\n    - Provide a detailed description of the ability.\n    - Explain how this ability enhances gameplay and offers a unique experience.\n    - Describe how it fits into the existing code structure and how it can be implemented.\n\n    **Guidelines**:\n    - Ensure the proposed ability is feasible within the current architecture.\n    - Consider the impact on game balance and player enjoyment.\n    - Do not write any code; focus on the design and integration aspects.\n\n    **Code Analysis Summary**:\n    {analysis}\n    ",
+                        "__module_class_name": "__main__.DesigneCode"
+                    }
+                ],
+                "rc": {
+                    "memory": {
+                        "storage": [
+                            {
+                                "id": "e89dd702081646aca0bf46c08af573fa",
+                                "content": "bullet_metagpt.py",
+                                "instruct_content": null,
+                                "role": "Human",
+                                "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+                                "sent_from": "",
+                                "send_to": [
+                                    "<all>"
+                                ]
+                            }
+                        ],
+                        "index": {
+                            "metagpt.actions.add_requirement.UserRequirement": [
+                                {
+                                    "id": "e89dd702081646aca0bf46c08af573fa",
+                                    "content": "bullet_metagpt.py",
+                                    "instruct_content": null,
+                                    "role": "Human",
+                                    "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+                                    "sent_from": "",
+                                    "send_to": [
+                                        "<all>"
+                                    ]
+                                }
+                            ]
+                        },
+                        "ignore_id": false
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "state": 0,
+                    "watch": [
+                        "metagpt.actions.add_requirement.UserRequirement"
+                    ],
+                    "react_mode": "react",
+                    "max_react_loop": 1
+                },
+                "addresses": [
+                    "__main__.designer",
+                    "Alice"
+                ],
+                "planner": {
+                    "plan": {
+                        "goal": "",
+                        "context": "",
+                        "tasks": [],
+                        "task_map": {},
+                        "current_task_id": ""
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "auto_run": false
+                },
+                "recovered": false,
+                "latest_observed_msg": {
+                    "id": "e89dd702081646aca0bf46c08af573fa",
+                    "content": "bullet_metagpt.py",
+                    "instruct_content": null,
+                    "role": "Human",
+                    "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+                    "sent_from": "",
+                    "send_to": [
+                        "<all>"
+                    ]
+                },
+                "__module_class_name": "__main__.designer"
+            },
+            "Generate new powerup code": {
+                "name": "Bob",
+                "profile": "Generate new powerup code",
+                "goal": "",
+                "constraints": "",
+                "desc": "",
+                "is_human": false,
+                "role_id": "",
+                "states": [
+                    "0. WriteCode"
+                ],
+                "actions": [
+                    {
+                        "name": "WriteCode",
+                        "i_context": "",
+                        "prefix": "You are a Generate new powerup code, named Bob, your goal is . ",
+                        "desc": "",
+                        "PROMPT_TEMPLATE": "\n    **Context**:\n    Using the design provided by the Designer and Code, IMPORTANT:your task is to implement the new bullet pattern or ability in the Bullet class based on buff_num2. \n    The response should contain only the complete code for each section (`bullet.py`, `buff1`, and `buff2`), with no additional text or explanation.\n    \n    **Tasks**:\n    - Write the code to implement the new bullet pattern or ability.\n    - Integrate the new code with the existing classes and methods in `bullet.py`.\n    - Ensure the new code follows the project's coding standards and conventions.\n\n    **Guidelines**:\n    - Write clean, readable, and well-documented code.\n    - Use appropriate design patterns if applicable.\n    - Do not alter existing functionality unless necessary for integration.\n    - Test the new code to ensure it functions correctly within the game.\n\n    **Design Information**:\n    {design_text}\n\n    **Code**:\n    {code}\n    ",
+                        "__module_class_name": "__main__.WriteCode"
+                    }
+                ],
+                "rc": {
+                    "memory": {
+                        "storage": [
+                            {
+                                "id": "e89dd702081646aca0bf46c08af573fa",
+                                "content": "bullet_metagpt.py",
+                                "instruct_content": null,
+                                "role": "Human",
+                                "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+                                "sent_from": "",
+                                "send_to": [
+                                    "<all>"
+                                ]
+                            }
+                        ],
+                        "index": {
+                            "metagpt.actions.add_requirement.UserRequirement": [
+                                {
+                                    "id": "e89dd702081646aca0bf46c08af573fa",
+                                    "content": "bullet_metagpt.py",
+                                    "instruct_content": null,
+                                    "role": "Human",
+                                    "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+                                    "sent_from": "",
+                                    "send_to": [
+                                        "<all>"
+                                    ]
+                                }
+                            ]
+                        },
+                        "ignore_id": false
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "state": -1,
+                    "watch": [
+                        "__main__.AnalysisCode",
+                        "__main__.ReadCode"
+                    ],
+                    "react_mode": "react",
+                    "max_react_loop": 1
+                },
+                "addresses": [
+                    "__main__.coder",
+                    "Bob"
+                ],
+                "planner": {
+                    "plan": {
+                        "goal": "",
+                        "context": "",
+                        "tasks": [],
+                        "task_map": {},
+                        "current_task_id": ""
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "auto_run": false
+                },
+                "recovered": false,
+                "latest_observed_msg": null,
+                "__module_class_name": "__main__.coder"
+            },
+            "check code": {
+                "name": "Rita",
+                "profile": "check code",
+                "goal": "",
+                "constraints": "",
+                "desc": "",
+                "is_human": false,
+                "role_id": "",
+                "states": [
+                    "0. RunCode",
+                    "1. ModifyCode"
+                ],
+                "actions": [
+                    {
+                        "name": "RunCode",
+                        "i_context": "",
+                        "prefix": "You are a check code, named Rita, your goal is . ",
+                        "desc": "",
+                        "__module_class_name": "__main__.RunCode"
+                    },
+                    {
+                        "name": "ModifyCode",
+                        "i_context": "",
+                        "prefix": "You are a check code, named Rita, your goal is . ",
+                        "desc": "",
+                        "PROMPT_TEMPLATE": "\n    **Context**:\n    I am developing a plane game and encountered an error when running the `bullet.py` code using `subprocess.run` in Python. \n    The error message is shown below. I need your assistance to modify the `bullet.py` code to fix the issue based on the error details.\n\n    **Error Details**:\n    {context}\n    **code**\n    {generated_code}\n    **Task**:\n    1. Analyze the error message above and identify the part of the code in `bullet.py` that needs modification.\n    2. Provide the **entire modified code** of `bullet.py` with the corrections implemented.\n    3. Highlight the specific changes you made in a separate section, explaining why the modifications were necessary and how they fix the issue.\n\n    **Guidelines**:\n    - Ensure the modified code maintains the coding standards and conventions used in the original `bullet.py`.\n    - Test the modified code in your environment to verify that it works as expected without errors before returning the result.\n    - Return both the **full modified code** and the **explanation of changes** in your response.\n    ",
+                        "__module_class_name": "__main__.ModifyCode"
+                    }
+                ],
+                "rc": {
+                    "memory": {
+                        "storage": [
+                            {
+                                "id": "e89dd702081646aca0bf46c08af573fa",
+                                "content": "bullet_metagpt.py",
+                                "instruct_content": null,
+                                "role": "Human",
+                                "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+                                "sent_from": "",
+                                "send_to": [
+                                    "<all>"
+                                ]
+                            }
+                        ],
+                        "index": {
+                            "metagpt.actions.add_requirement.UserRequirement": [
+                                {
+                                    "id": "e89dd702081646aca0bf46c08af573fa",
+                                    "content": "bullet_metagpt.py",
+                                    "instruct_content": null,
+                                    "role": "Human",
+                                    "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+                                    "sent_from": "",
+                                    "send_to": [
+                                        "<all>"
+                                    ]
+                                }
+                            ]
+                        },
+                        "ignore_id": false
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "state": -1,
+                    "watch": [
+                        "metagpt.actions.add_requirement.UserRequirement"
+                    ],
+                    "react_mode": "react",
+                    "max_react_loop": 1
+                },
+                "addresses": [
+                    "Rita",
+                    "__main__.checker"
+                ],
+                "planner": {
+                    "plan": {
+                        "goal": "",
+                        "context": "",
+                        "tasks": [],
+                        "task_map": {},
+                        "current_task_id": ""
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "auto_run": false
+                },
+                "recovered": false,
+                "latest_observed_msg": {
+                    "id": "e89dd702081646aca0bf46c08af573fa",
+                    "content": "bullet_metagpt.py",
+                    "instruct_content": null,
+                    "role": "Human",
+                    "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+                    "sent_from": "",
+                    "send_to": [
+                        "<all>"
+                    ]
+                },
+                "__module_class_name": "__main__.checker"
+            },
+            "update new bullet": {
+                "name": "Leo",
+                "profile": "update new bullet",
+                "goal": "",
+                "constraints": "",
+                "desc": "",
+                "is_human": false,
+                "role_id": "",
+                "states": [
+                    "0. UpdateCode"
+                ],
+                "actions": [
+                    {
+                        "name": "UpdateCode",
+                        "i_context": "",
+                        "prefix": "You are a update new bullet, named Leo, your goal is . ",
+                        "desc": "",
+                        "PROMPT_TEMPLATE": "\n    **Context**:\n    Generate code that upgrades `buff2` in the `player_fire` method to make it stronger as `buff2_num` increases, \n    similar to the functionality of `buff1`. Ensure that `buff2` enhances its effects based on the value of `buff2_num`. \n    Include all necessary code for `bullet`, `buff1`, and `buff2` without any descriptive text or explanations.\n    **code**\n    {generated_code}\n\n    ",
+                        "__module_class_name": "__main__.UpdateCode"
+                    }
+                ],
+                "rc": {
+                    "memory": {
+                        "storage": [],
+                        "index": {
+                            "metagpt.actions.add_requirement.UserRequirement": [],
+                            "__main__.UpdateCode": []
+                        },
+                        "ignore_id": false
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "state": 0,
+                    "watch": [
+                        "metagpt.actions.add_requirement.UserRequirement"
+                    ],
+                    "react_mode": "react",
+                    "max_react_loop": 1
+                },
+                "addresses": [
+                    "__main__.updater",
+                    "Leo"
+                ],
+                "planner": {
+                    "plan": {
+                        "goal": "",
+                        "context": "",
+                        "tasks": [],
+                        "task_map": {},
+                        "current_task_id": ""
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "auto_run": false
+                },
+                "recovered": false,
+                "latest_observed_msg": {
+                    "id": "e89dd702081646aca0bf46c08af573fa",
+                    "content": "bullet_metagpt.py",
+                    "instruct_content": null,
+                    "role": "Human",
+                    "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+                    "sent_from": "",
+                    "send_to": [
+                        "<all>"
+                    ]
+                },
+                "__module_class_name": "__main__.updater"
+            }
+        },
+        "history": "\nHuman: bullet_metagpt.py"
+    },
+    "investment": 10.0,
+    "idea": "bullet_metagpt.py"
+}
